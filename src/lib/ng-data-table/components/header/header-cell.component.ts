@@ -4,7 +4,6 @@ import {
 import {Column, DataTable, EventHelper} from '../../base';
 import {Subscription} from 'rxjs';
 import {ColumnMenuEventArgs} from '../../base/types';
-import {findAncestor} from '../../../common/utils';
 
 @Component({
   selector: 'dt-header-cell',
@@ -27,6 +26,11 @@ export class HeaderCellComponent implements OnInit, OnDestroy {
   @HostBinding('style.width.px')
   get width(): number {
     return this.column.width;
+  }
+
+  @HostBinding('style.left.px')
+  get left() {
+    return (this.column.frozen) ? this.column.left : null;
   }
 
   @HostBinding('attr.title')

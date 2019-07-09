@@ -8,6 +8,7 @@ import {BodyComponent} from '../body/body.component';
 import {PageEvent} from '../../../pagination';
 import {HeaderTemplateDirective} from '../../directives/header-template.directive';
 import {RowGroupTemplateDirective} from '../../directives/row-group-template.directive';
+import {ScrollerComponent} from '../../../scroller';
 
 @Component({
   selector: 'app-datatable, app-data-table',
@@ -36,6 +37,7 @@ export class DataTableComponent implements OnInit, OnDestroy {
   @ViewChild('resizeHelper', {static: true}) resizeHelper: ElementRef;
   @ViewChild('footer', {static: true}) footerViewChild: ElementRef;
   @ViewChild(BodyComponent, {static: false}) body: BodyComponent;
+  @ViewChild(ScrollerComponent, {static: true}) scroller: ScrollerComponent;
   @ViewChild('rowCheckboxTemplate', {static: true}) rowCheckboxTemplate: TemplateRef<any>;
   @ViewChild('headerCheckboxTemplate', {static: true}) headerCheckboxTemplate: TemplateRef<any>;
 
@@ -103,7 +105,7 @@ export class DataTableComponent implements OnInit, OnDestroy {
     this.table.pager.perPage = event.perPage;
     this.table.events.onPage();
     if (this.table.settings.virtualScroll) {
-      this.body.scroller.setPageOffsetY(event.currentPage);
+      this.scroller.setPageOffsetY(event.currentPage);
     } else {
       if (this.table.clientSide) {
         this.table.loadLocalRows();
@@ -153,6 +155,27 @@ export class DataTableComponent implements OnInit, OnDestroy {
   onCheckboxClick(row: Row) {
     this.table.selection.toggle(row.$$index);
     this.table.events.onCheckbox(row);
+  }
+
+  updatePage(direction: string) {
+    if (this.table.settings.virtualScroll && direction && this.table.pager) {
+      let page = this.scroller.start / this.scroller.itemsPerRow;
+      page = Math.ceil(page) + 1;
+      if (page !== this.table.pager.current) {
+        this.table.pager.current = page;
+        this.table.events.onPage();
+      }
+    }
+  }
+
+  onScroll(event: any) {
+    this.table.dimensions.offsetY = event.scrollYPos;
+    this.table.dimensions.offsetX = event.scrollXPos;
+    this.table.events.onScroll(event);
+    if (event.direction) {
+      this.updatePage(event.direction);
+    }
+    this.cd.markForCheck();
   }
 
 }

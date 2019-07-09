@@ -3,7 +3,9 @@
   [ngTemplateOutlet]="headerTemplate.template">
 </ng-template>
 
-<div #headerRow class="datatable-header-row" [style.height.px]="table.dimensions.headerRowHeight">
+<div class="datatable-header-row"
+  [style.height.px]="table.dimensions.headerRowHeight"
+  [style.width.px]="table.dimensions.columnsTotalWidth">
 
   <dt-header-cell
     *ngFor="let column of table.preparedColumns; trackBy: columnTrackingFn"

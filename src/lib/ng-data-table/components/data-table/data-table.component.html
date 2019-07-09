@@ -6,21 +6,31 @@
   [east]="true"
   [table]="table">
 </app-filter>
-<dt-header
-  *ngIf="headerVisible"
-  [table]="table"
-  [headerTemplate]="headerTemplate">
-</dt-header>
-<dt-body
-  appBodyMouseover
-  appBodyKeydown
-  appBodyClick
-  appBodyDblClick
-  appBodyContextMenu
-  [table]="table"
-  [loading]="loading"
-  [rowGroupTemplate]="rowGroupTemplate">
-</dt-body>
+<app-scroller
+  [items]="table.rows"
+  [virtualScroll]="table.settings.virtualScroll"
+  [rowHeight]="table.dimensions.rowHeight"
+  [scrollHeight]="table.dimensions.bodyHeight"
+  [itemsPerRow]="table.pager.perPage"
+  [rowHeightProp]="table.settings.rowHeightProp"
+  (scrollChange)=onScroll($event)>
+    <dt-header
+      *ngIf="headerVisible"
+      [table]="table"
+      [headerTemplate]="headerTemplate">
+    </dt-header>
+    <dt-body
+      appBodyMouseover
+      appBodyKeydown
+      appBodyClick
+      appBodyDblClick
+      appBodyContextMenu
+      [table]="table"
+      [loading]="loading"
+      [rowGroupTemplate]="rowGroupTemplate"
+      [viewRows]="scroller.viewRows">
+    </dt-body>
+</app-scroller>
 
 <div #footer class="datatable-footer">
     <app-pagination

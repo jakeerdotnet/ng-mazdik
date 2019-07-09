@@ -49,7 +49,6 @@
 .datatable-header {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .datatable-body {
@@ -64,8 +63,18 @@
 
 /* sticky columns */
 .dt-sticky {
-  z-index: 1;
   position: sticky;
+}
+
+.dt-sticky-header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+.dt-sticky-header .dt-sticky {
+  z-index: 1;
+  top: 0;
 }
 
 .datatable-body-cell.dt-sticky {

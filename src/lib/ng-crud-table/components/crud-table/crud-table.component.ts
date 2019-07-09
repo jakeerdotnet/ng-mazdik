@@ -185,7 +185,7 @@ export class CrudTableComponent implements OnInit, OnDestroy {
   onFilter() {
     this.dataManager.pager.current = 1;
     if (this.dataManager.settings.virtualScroll) {
-      this.dt.body.scroller.setOffsetY(0);
+      this.dt.scroller.setOffsetY(0);
       this.dataManager.pagerCache = {};
       this.dataManager.clear();
     }
@@ -194,7 +194,7 @@ export class CrudTableComponent implements OnInit, OnDestroy {
 
   onSort() {
     if (this.dataManager.settings.virtualScroll) {
-      this.dt.body.scroller.setOffsetY(0);
+      this.dt.scroller.setOffsetY(0);
       this.dataManager.pager.current = 1;
       this.dataManager.pagerCache = {};
       this.dataManager.clear();

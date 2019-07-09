@@ -18,8 +18,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
   @Input() headerTemplate: HeaderTemplateDirective;
 
   @HostBinding('class.datatable-header') cssClass = true;
+  @HostBinding('class.dt-sticky-header') cssSticky = true;
   @ViewChild('headerTemplateView', {static: true}) headerTemplateView: ViewContainerRef;
-  @ViewChild('headerRow', {static: true}) headerRow: ElementRef;
 
   private subscriptions: Subscription[] = [];
   columnTrackingFn = (i: number, col: Column) => col.name;
@@ -30,18 +30,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     const subColumnResizeEnd = this.table.events.resizeEndSource$.subscribe(() => {
       this.cd.markForCheck();
     });
-    const subScroll = this.table.events.scrollSource$.subscribe((event) => {
-      if (!event.direction) {
-        const stickyCells = this.headerRow.nativeElement.querySelectorAll('.dt-sticky');
-        this.headerRow.nativeElement.style.transform = `translate3d(${this.table.dimensions.offsetX * -1}px, 0, 0)`;
-        for (const cell of stickyCells) {
-          cell.style.transform = `translate3d(${this.table.dimensions.offsetX}px, 0, 0)`;
-        }
-        this.cd.markForCheck();
-      }
-    });
     this.subscriptions.push(subColumnResizeEnd);
-    this.subscriptions.push(subScroll);
   }
 
   ngOnDestroy() {
