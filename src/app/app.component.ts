@@ -3,8 +3,9 @@ import { Router, NavigationEnd } from '@angular/router';
 import { NavMenuComponent } from 'ng-mazdik-lib';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html'
+    selector: 'app-root',
+    templateUrl: 'app.component.html',
+    standalone: false
 })
 export class AppComponent implements AfterViewInit {
 

@@ -2,7 +2,8 @@ import { Directive, Input, ElementRef, OnInit, OnDestroy, NgZone } from '@angula
 import { DataTable, EventHelper } from '../base';
 
 @Directive({
-  selector: '[appBodyContextMenu]'
+    selector: '[appBodyContextMenu]',
+    standalone: false
 })
 export class BodyContextMenuDirective implements OnInit, OnDestroy {
 

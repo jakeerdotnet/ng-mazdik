@@ -2,8 +2,8 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { TreeNode, TreeHelper, FilterState } from '../tree-lib';
 
 @Component({
-  selector: 'app-tree-view-node',
-  template: `
+    selector: 'app-tree-view-node',
+    template: `
     <li *ngIf="node" [ngClass]="nodeClass()">
       <i [ngClass]="getExpanderIcon(node)"
          (click)="onExpand(node)">
@@ -25,7 +25,8 @@ import { TreeNode, TreeHelper, FilterState } from '../tree-lib';
         </app-tree-view-node>
       </ul>
     </li>
-  `
+  `,
+    standalone: false
 })
 export class TreeViewNodeComponent implements OnInit {
 

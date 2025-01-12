@@ -4,8 +4,9 @@ import { DemoService } from './demo.service';
 import { getColumnsPlayers } from './columns';
 
 @Component({
-  selector: 'app-basic-demo',
-  template: `<app-crud-table [dataManager]="dataManager"></app-crud-table>`
+    selector: 'app-basic-demo',
+    template: `<app-crud-table [dataManager]="dataManager"></app-crud-table>`,
+    standalone: false
 })
 
 export class CrudTableDemoComponent implements OnInit {

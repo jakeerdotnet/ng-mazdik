@@ -6,9 +6,10 @@ import { ScrollerEventArgs } from './types';
 import { isBlank } from '../common/utils';
 
 @Component({
-  selector: 'app-scroller, [scroller]',
-  templateUrl: './scroller.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-scroller, [scroller]',
+    templateUrl: './scroller.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class ScrollerComponent implements OnInit, OnDestroy {
 

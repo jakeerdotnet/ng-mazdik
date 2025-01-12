@@ -5,12 +5,13 @@ import { getTreeColumns } from './columns';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-tree-table-demo',
-  template: `<p>Tree with lazy load child nodes</p>
+    selector: 'app-tree-table-demo',
+    template: `<p>Tree with lazy load child nodes</p>
   <app-tree-table [treeTable]="treeTable"></app-tree-table>
   <p>Build tree array from flat array (id, parentId)</p>
   <app-tree-table [treeTable]="flattenTreeTable"></app-tree-table>
-  `
+  `,
+    standalone: false
 })
 export class TreeTableDemoComponent implements OnInit, OnDestroy {
 

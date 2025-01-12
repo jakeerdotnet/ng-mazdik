@@ -2,7 +2,8 @@ import { Directive, Input, ElementRef, OnInit, OnDestroy, NgZone } from '@angula
 import { DataTable, EventHelper } from '../base';
 
 @Directive({
-  selector: '[appBodyMouseover]'
+    selector: '[appBodyMouseover]',
+    standalone: false
 })
 export class BodyMouseoverDirective implements OnInit, OnDestroy {
 

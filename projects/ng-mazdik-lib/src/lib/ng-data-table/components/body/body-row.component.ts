@@ -6,9 +6,10 @@ import { Subscription } from 'rxjs';
 import { isBlank } from '../../../common/utils';
 
 @Component({
-  selector: 'dt-body-row',
-  templateUrl: './body-row.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'dt-body-row',
+    templateUrl: './body-row.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class BodyRowComponent implements OnInit, OnDestroy {
 

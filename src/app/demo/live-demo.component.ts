@@ -4,11 +4,12 @@ import { getColumnsPlayers } from './columns';
 import { Subscription, interval } from 'rxjs';
 
 @Component({
-  selector: 'app-live-demo',
-  template: `
+    selector: 'app-live-demo',
+    template: `
     <button class="dt-button" style="margin-bottom: 5px;" (click)="stop=!stop">{{stop ? 'start' : 'stop'}}</button>
     <app-data-table [table]="table"></app-data-table>
-  `
+  `,
+    standalone: false
 })
 
 export class LiveDemoComponent implements OnInit, OnDestroy {

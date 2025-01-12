@@ -1,7 +1,8 @@
 import { Directive, ElementRef, AfterViewInit } from '@angular/core';
 
 @Directive({
- selector: '[appAfterViewFocus]',
+    selector: '[appAfterViewFocus]',
+    standalone: false
 })
 export class AfterViewFocusDirective implements AfterViewInit {
 

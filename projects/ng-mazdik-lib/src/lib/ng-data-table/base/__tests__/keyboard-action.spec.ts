@@ -8,13 +8,14 @@ import { DataSelection } from '../data-selection';
 import { Keys } from '../../../common';
 
 @Component({
-  template: `
+    template: `
   <div class="datatable-row">
     <div class="datatable-body-cell" data-column-index="1" data-row-index="4">
       <div class="dt-inline-data" (keydown)="evt=$event"></div>
     </div>
   </div>
-  `
+  `,
+    standalone: false
 })
 class TestFixtureComponent {
   evt: any;

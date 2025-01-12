@@ -2,7 +2,8 @@ import { Directive, Input, ElementRef, OnInit, OnDestroy, NgZone } from '@angula
 import { DataTable, EventHelper } from '../base';
 
 @Directive({
-  selector: '[appBodyDblClick]'
+    selector: '[appBodyDblClick]',
+    standalone: false
 })
 export class BodyDblClickDirective implements OnInit, OnDestroy {
 

@@ -10,9 +10,10 @@ import { HeaderTemplateDirective } from '../../directives/header-template.direct
 import { RowGroupTemplateDirective } from '../../directives/row-group-template.directive';
 
 @Component({
-  selector: 'app-datatable, app-data-table',
-  templateUrl: './data-table.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-datatable, app-data-table',
+    templateUrl: './data-table.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class DataTableComponent implements OnInit, OnDestroy {
 

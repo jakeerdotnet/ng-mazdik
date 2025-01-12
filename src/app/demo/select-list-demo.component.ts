@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { SelectItem } from 'ng-mazdik-lib';
 
 @Component({
-  selector: 'app-select-list-demo',
-  template: `
+    selector: 'app-select-list-demo',
+    template: `
   <div class="select-list-demo">
     <app-select-list class="sl-column"
         [options]="options"
@@ -23,6 +23,7 @@ import { SelectItem } from 'ng-mazdik-lib';
     </app-select-list>
   </div>
   `,
+    standalone: false
 })
 export class SelectListDemoComponent {
 

@@ -4,9 +4,10 @@ import { getColumnsPlayers } from './columns';
 import { DateFormatPipe } from '../pipes/date-format.pipe';
 
 @Component({
-  selector: 'app-pipe-demo',
-  template: `<p>Date format pipe on column "Last online"</p>
-  <app-data-table [table]="table"></app-data-table>`
+    selector: 'app-pipe-demo',
+    template: `<p>Date format pipe on column "Last online"</p>
+  <app-data-table [table]="table"></app-data-table>`,
+    standalone: false
 })
 
 export class PipeDemoComponent implements OnInit {

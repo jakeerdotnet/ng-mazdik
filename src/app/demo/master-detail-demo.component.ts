@@ -4,8 +4,8 @@ import { getColumnsPlayers, getColumnsRank, getColumnsInventory } from './column
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-master-detail-demo',
-  template: `
+    selector: 'app-master-detail-demo',
+    template: `
     <app-data-table [table]="dtPlayers"></app-data-table>
     <div style="display:flex;">
       <div style="width: 59%;">
@@ -16,7 +16,8 @@ import { Subscription } from 'rxjs';
         <app-data-table [table]="dtRank"></app-data-table>
       </div>
     </div>
-  `
+  `,
+    standalone: false
 })
 
 export class MasterDetailDemoComponent implements OnInit, OnDestroy {

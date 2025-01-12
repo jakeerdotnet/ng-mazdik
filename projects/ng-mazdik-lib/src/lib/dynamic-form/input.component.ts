@@ -2,9 +2,10 @@ import { Component, Input, Output, OnInit, EventEmitter, ChangeDetectionStrategy
 import { DynamicFormElement } from './dynamic-form-element';
 
 @Component({
-  selector: 'app-form-input',
-  template: ``,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-form-input',
+    template: ``,
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class InputComponent implements OnInit {
 

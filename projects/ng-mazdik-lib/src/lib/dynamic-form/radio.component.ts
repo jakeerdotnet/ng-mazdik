@@ -2,8 +2,8 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { InputOptionComponent } from './input-option.component';
 
 @Component({
-  selector: 'app-form-radio',
-  template: `
+    selector: 'app-form-radio',
+    template: `
     <div class="dt-group" [ngClass]="{'dt-has-error':dynElement.hasError}">
       <label [attr.for]="dynElement.name">{{dynElement.title}}</label>
       <i class="dt-loader" *ngIf="loading"></i>
@@ -24,7 +24,8 @@ import { InputOptionComponent } from './input-option.component';
       </div>
     </div>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class RadioComponent extends InputOptionComponent {
 

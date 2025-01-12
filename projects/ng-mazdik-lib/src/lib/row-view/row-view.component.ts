@@ -2,9 +2,10 @@ import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { KeyValuePair } from './types';
 
 @Component({
-  selector: 'app-row-view',
-  templateUrl: './row-view.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-row-view',
+    templateUrl: './row-view.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class RowViewComponent {
 

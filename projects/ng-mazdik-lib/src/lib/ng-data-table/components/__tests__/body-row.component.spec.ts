@@ -8,7 +8,8 @@ import { BodyCellComponent } from '../body/body-cell.component';
 import { InlineEditModule } from '../../../inline-edit/inline-edit-module';
 
 @Component({
-  template: `<dt-body-row [table]="dataTable" [row]="row"></dt-body-row>`
+    template: `<dt-body-row [table]="dataTable" [row]="row"></dt-body-row>`,
+    standalone: false
 })
 class TestFixtureComponent {
   dataTable: DataTable;

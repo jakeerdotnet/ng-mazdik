@@ -4,9 +4,10 @@ import { CellEventArgs, EditMode, CellEventType } from '../../base';
 import { Keys } from '../../../common';
 
 @Component({
-  selector: 'dt-body-cell-edit',
-  templateUrl: './body-cell-edit.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'dt-body-cell-edit',
+    templateUrl: './body-cell-edit.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class BodyCellEditComponent extends BodyCellComponent implements OnInit {
 

@@ -4,13 +4,14 @@ import {
 import { Message } from './types';
 
 @Component({
-  selector: 'app-notify-item',
-  template: `
+    selector: 'app-notify-item',
+    template: `
   <div class="dt-notify-title">{{message?.title}}</div>
   <div class="dt-notify-text">{{message?.text}}</div>
   <span class="dt-n-close" (click)="onCloseClick()"></span>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class NotifyItemComponent implements AfterViewInit, OnDestroy {
 

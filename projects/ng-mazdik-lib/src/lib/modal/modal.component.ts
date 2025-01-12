@@ -5,8 +5,9 @@ import { ResizableEvent } from '../resizable/types';
 import { maxZIndex, findAncestor } from '../common/utils';
 
 @Component({
-  selector: 'app-modal',
-  templateUrl: 'modal.component.html',
+    selector: 'app-modal',
+    templateUrl: 'modal.component.html',
+    standalone: false
 })
 export class ModalComponent implements AfterViewChecked {
 

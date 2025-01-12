@@ -4,8 +4,8 @@ import { getColumnsPlayers } from './columns';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-vertical-group-demo',
-  template: `
+    selector: 'app-vertical-group-demo',
+    template: `
   <div class="vertical-group-demo">
     <div class="datatable vertical">
       <div class="datatable-header-cell">
@@ -36,6 +36,7 @@ import { Subscription } from 'rxjs';
     <app-data-table class="tab2 fixed-header" [table]="table"></app-data-table>
   </div>
   `,
+    standalone: false
 })
 
 export class VerticalGroupDemoComponent implements OnInit, OnDestroy {

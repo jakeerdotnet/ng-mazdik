@@ -9,9 +9,10 @@ import { isBlank } from '../common/utils';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-context-menu',
-  templateUrl: './context-menu.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-context-menu',
+    templateUrl: './context-menu.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class ContextMenuComponent implements OnInit, OnDestroy {
 

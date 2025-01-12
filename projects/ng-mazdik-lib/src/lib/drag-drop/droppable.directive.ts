@@ -2,7 +2,8 @@ import { Directive, Input, ElementRef, HostListener, Output, EventEmitter } from
 import { DragElementEvent, DropElementEvent } from './types';
 
 @Directive({
-  selector: '[appDroppable]'
+    selector: '[appDroppable]',
+    standalone: false
 })
 export class DroppableDirective  {
 

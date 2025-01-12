@@ -5,9 +5,10 @@ import { DataTable, Cell, CellEventArgs, CellEventType } from '../../base';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'dt-body-cell',
-  templateUrl: 'body-cell.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'dt-body-cell',
+    templateUrl: 'body-cell.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class BodyCellComponent implements OnInit, OnDestroy {
 

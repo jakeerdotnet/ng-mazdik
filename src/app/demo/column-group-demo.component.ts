@@ -3,8 +3,8 @@ import { Settings, DataTable } from 'ng-mazdik-lib';
 import { getColumnsPlayers } from './columns';
 
 @Component({
-  selector: 'app-column-group-demo',
-  template: `
+    selector: 'app-column-group-demo',
+    template: `
     <app-data-table [table]="table" class="header-demo">
       <ng-template dtHeaderTemplate>
         <div class="datatable-header-row" [style.height.px]="40" [style.transform]="translate3d()">
@@ -18,6 +18,7 @@ import { getColumnsPlayers } from './columns';
       </ng-template>
     </app-data-table>
   `,
+    standalone: false
 })
 
 export class ColumnGroupDemoComponent implements OnInit {

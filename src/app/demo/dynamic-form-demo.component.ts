@@ -3,8 +3,8 @@ import { DynamicFormElement, GetOptionsFunc, ColumnBase } from 'ng-mazdik-lib';
 import { getColumnsPlayers } from './columns';
 
 @Component({
-  selector: 'app-dynamic-form-demo',
-  template: `
+    selector: 'app-dynamic-form-demo',
+    template: `
   <app-dynamic-form class="dynamic-form-demo"
     [dynElements]="dynElements"
     [item]="item"
@@ -16,6 +16,7 @@ import { getColumnsPlayers } from './columns';
     (loaded)="onLoaded($event)">
   </app-dynamic-form>
   `,
+    standalone: false
 })
 export class DynamicFormDemoComponent {
 

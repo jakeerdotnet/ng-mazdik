@@ -2,9 +2,10 @@ import { Component, Output, EventEmitter, Input, ChangeDetectionStrategy, HostBi
 import { PageEvent } from './types';
 
 @Component({
-  selector: 'app-pagination',
-  templateUrl: 'pagination.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-pagination',
+    templateUrl: 'pagination.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class PaginationComponent {
 

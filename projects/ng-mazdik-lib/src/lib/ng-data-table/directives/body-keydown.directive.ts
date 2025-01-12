@@ -2,7 +2,8 @@ import { Directive, Input, ElementRef, OnInit, OnDestroy, NgZone } from '@angula
 import { DataTable, KeyboardAction } from '../base';
 
 @Directive({
-  selector: '[appBodyKeydown]'
+    selector: '[appBodyKeydown]',
+    standalone: false
 })
 export class BodyKeydownDirective implements OnInit, OnDestroy {
 

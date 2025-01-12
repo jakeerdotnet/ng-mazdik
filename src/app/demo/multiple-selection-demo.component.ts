@@ -3,13 +3,14 @@ import { Settings, DataTable } from 'ng-mazdik-lib';
 import { getColumnsPlayers } from './columns';
 
 @Component({
-  selector: 'app-multiple-selection-demo',
-  template: `<button class="dt-button" (click)="clearSelection()">Clear all selections</button>
+    selector: 'app-multiple-selection-demo',
+    template: `<button class="dt-button" (click)="clearSelection()">Clear all selections</button>
     <p>Selection type: multiple. Selection mode: checkbox</p>
     <app-data-table [table]="table"></app-data-table>
     <p>Selection type: multiple. Selection mode: radio</p>
     <app-data-table [table]="table2"></app-data-table>
-  `
+  `,
+    standalone: false
 })
 
 export class MultipleSelectionDemoComponent implements OnInit {

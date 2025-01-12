@@ -7,7 +7,8 @@ import { HeaderCellComponent } from '../header/header-cell.component';
 import { ResizableModule } from '../../../resizable/resizable-module';
 
 @Component({
-  template: `<dt-header [table]="dataTable"></dt-header>`
+    template: `<dt-header [table]="dataTable"></dt-header>`,
+    standalone: false
 })
 class TestFixtureComponent {
   dataTable: DataTable;

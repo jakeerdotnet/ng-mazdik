@@ -2,14 +2,15 @@ import { Component } from '@angular/core';
 import { NotifyService } from 'ng-mazdik-lib';
 
 @Component({
-  selector: 'app-notify-demo',
-  template: `
+    selector: 'app-notify-demo',
+    template: `
     <button class="dt-button" (click)="error()">Error</button>&nbsp;
     <button class="dt-button" (click)="info()">Info</button>&nbsp;
     <button class="dt-button" (click)="notify()">Notify</button>&nbsp;
     <button class="dt-button" (click)="success()">Success</button>&nbsp;
     <button class="dt-button" (click)="warning()">Warning</button>
-  `
+  `,
+    standalone: false
 })
 export class NotifyDemoComponent {
 

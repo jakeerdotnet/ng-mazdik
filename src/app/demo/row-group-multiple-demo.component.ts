@@ -3,8 +3,9 @@ import { Settings, DataTable } from 'ng-mazdik-lib';
 import { getColumnsPlayers } from './columns';
 
 @Component({
-  selector: 'app-row-group-multiple-demo',
-  template: `<app-data-table [table]="table"></app-data-table>`
+    selector: 'app-row-group-multiple-demo',
+    template: `<app-data-table [table]="table"></app-data-table>`,
+    standalone: false
 })
 
 export class RowGroupMultipleDemoComponent implements OnInit {

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-panel-demo',
-  template: `
+    selector: 'app-panel-demo',
+    template: `
   <button class="dt-button" (click)="modal1.show()">Open panel 1</button>&nbsp;
   <button class="dt-button" (click)="modal2.show()">Open panel 2</button>&nbsp;
   <button class="dt-button" (click)="modal3.show()">Open panel 2</button>&nbsp;
@@ -55,6 +55,7 @@ import { Component } from '@angular/core';
       </ng-container>
     </app-modal>
   `,
+    standalone: false
 })
 export class PanelDemoComponent {
 

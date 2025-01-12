@@ -5,9 +5,10 @@ import { PageEvent } from '../../lib/pagination/types';
 import { SelectItem, arrayPaginate } from '../common';
 
 @Component({
-  selector: 'app-modal-select',
-  templateUrl: './modal-select.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-modal-select',
+    templateUrl: './modal-select.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 
 export class ModalSelectComponent {

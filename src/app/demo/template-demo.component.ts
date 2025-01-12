@@ -3,8 +3,8 @@ import { ColumnBase, Settings, DataTable, FilterOperator } from 'ng-mazdik-lib';
 import { getColumnsPlayers } from './columns';
 
 @Component({
-  selector: 'app-template-demo',
-  template: `
+    selector: 'app-template-demo',
+    template: `
     <app-data-table [table]="table"></app-data-table>
     <ng-template #headerCellTemplate let-column="column">
       <img width="40" src="assets/asmodian.png" title="ASMODIANS"
@@ -33,7 +33,8 @@ import { getColumnsPlayers } from './columns';
     <ng-template #cellRnTemplate let-row="row">
       {{row.$$index + 1}}
     </ng-template>
-  `
+  `,
+    standalone: false
 })
 
 export class TemplateDemoComponent implements OnInit {

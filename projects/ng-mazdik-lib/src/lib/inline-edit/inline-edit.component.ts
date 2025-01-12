@@ -3,9 +3,10 @@ import { SelectItem } from '../common';
 import { inputFormattedDate, inputIsDateType, checkStrDate, isBlank } from '../common/utils';
 
 @Component({
-  selector: 'app-inline-edit, [inline-edit]',
-  templateUrl: 'inline-edit.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-inline-edit, [inline-edit]',
+    templateUrl: 'inline-edit.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class InlineEditComponent {
 

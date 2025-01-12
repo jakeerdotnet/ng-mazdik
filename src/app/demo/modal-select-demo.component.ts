@@ -2,14 +2,15 @@ import { Component } from '@angular/core';
 import { SelectItem } from 'ng-mazdik-lib';
 
 @Component({
-  selector: 'app-modal-select-demo',
-  template: `
+    selector: 'app-modal-select-demo',
+    template: `
   <app-modal-select class="modal-select-demo"
     [(value)]="model"
     [options]="options"
     (valueChange)="onValueChange()">
   </app-modal-select>
-  `
+  `,
+    standalone: false
 })
 export class ModalSelectDemoComponent {
 

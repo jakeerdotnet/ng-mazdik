@@ -4,8 +4,8 @@ import { DemoService } from './demo.service';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-multi-select-demo',
-  template: `
+    selector: 'app-multi-select-demo',
+    template: `
   <div class="multi-select-demo-block">
     <div class="dt-dropdown-select-list" [ngStyle]="getSelectListStyles()">
       <app-select-list
@@ -46,6 +46,7 @@ import { Subscription } from 'rxjs';
       </app-dropdown-select>
     </ng-template>
   `,
+    standalone: false
 })
 
 export class MultiSelectDemoComponent implements OnInit, OnDestroy {

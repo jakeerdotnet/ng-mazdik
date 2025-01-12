@@ -4,8 +4,9 @@ import { DemoService } from './demo.service';
 import { getColumnsPlayers } from './columns';
 
 @Component({
-  selector: 'app-custom-row-action-demo',
-  template: `<app-crud-table #cdt [dataManager]="dataManager"></app-crud-table>`
+    selector: 'app-custom-row-action-demo',
+    template: `<app-crud-table #cdt [dataManager]="dataManager"></app-crud-table>`,
+    standalone: false
 })
 
 export class CustomRowActionDemoComponent implements AfterViewInit {

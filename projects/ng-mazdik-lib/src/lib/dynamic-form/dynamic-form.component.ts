@@ -5,9 +5,10 @@ import { GetOptionsFunc, KeyElementChangeEventArgs } from './types';
 import { DynamicFormElement } from './dynamic-form-element';
 
 @Component({
-  selector: 'app-dynamic-form',
-  templateUrl: 'dynamic-form.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-dynamic-form',
+    templateUrl: 'dynamic-form.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 
 export class DynamicFormComponent {

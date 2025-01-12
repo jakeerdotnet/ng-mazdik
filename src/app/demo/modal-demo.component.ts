@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-modal-demo',
-  template: `
+    selector: 'app-modal-demo',
+    template: `
     <button class="dt-button" (click)="modalRoot.show()">Open modal</button>
     <app-modal #modalRoot
                [maximizable]="true"
@@ -20,6 +20,7 @@ import { Component } from '@angular/core';
       </ng-container>
     </app-modal>
   `,
+    standalone: false
 })
 export class ModalDemoComponent {
 

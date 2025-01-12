@@ -4,9 +4,10 @@ import { SelectItem } from '../common';
 import { ModalComponent } from '../modal/modal.component';
 
 @Component({
-  selector: 'dt-column-toggler',
-  templateUrl: './dt-column-toggler.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'dt-column-toggler',
+    templateUrl: './dt-column-toggler.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class DtColumnTogglerComponent {
 

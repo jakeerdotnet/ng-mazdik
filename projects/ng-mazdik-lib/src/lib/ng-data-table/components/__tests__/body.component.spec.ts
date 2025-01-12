@@ -10,7 +10,8 @@ import { InlineEditModule } from '../../../inline-edit/inline-edit-module';
 import { ScrollerModule } from '../../../scroller/scroller-module';
 
 @Component({
-  template: `<dt-body [table]="dataTable"></dt-body>`
+    template: `<dt-body [table]="dataTable"></dt-body>`,
+    standalone: false
 })
 class TestFixtureComponent {
   dataTable: DataTable;

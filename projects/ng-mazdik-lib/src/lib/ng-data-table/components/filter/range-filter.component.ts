@@ -5,9 +5,10 @@ import { Column, DataTable, FilterOperator } from '../../base';
 import { inputFormattedDate, getLastDate, LastDateType } from '../../../common/utils';
 
 @Component({
-  selector: 'app-range-filter',
-  templateUrl: 'range-filter.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-range-filter',
+    templateUrl: 'range-filter.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class RangeFilterComponent implements OnInit, AfterViewInit, OnChanges {
 

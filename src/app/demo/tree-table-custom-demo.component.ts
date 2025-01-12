@@ -4,8 +4,8 @@ import { getTreeColumns } from './columns';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-tree-table-custom-demo',
-  template: `<p>Editable if last level. Summed column Cube_size if has children rows</p>
+    selector: 'app-tree-table-custom-demo',
+    template: `<p>Editable if last level. Summed column Cube_size if has children rows</p>
   <app-data-table class="fact-table" [table]="dataTable"></app-data-table>
   <ng-template #cellTemplate let-row="row" let-value="value" let-column="column">
     {{getSum(row, column, value)}}
@@ -24,7 +24,8 @@ import { Subscription } from 'rxjs';
       </span>
       </div>
   </ng-template>
-  `
+  `,
+    standalone: false
 })
 export class TreeTableCustomDemoComponent implements OnInit, OnDestroy {
 

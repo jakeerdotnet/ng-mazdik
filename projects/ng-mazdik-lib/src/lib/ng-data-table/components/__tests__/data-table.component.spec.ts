@@ -5,7 +5,8 @@ import { Settings, DataTable } from '../../base';
 import { DataTableModule } from '../../data-table-module';
 
 @Component({
-  template: `<app-data-table [table]="dataTable"></app-data-table>`
+    template: `<app-data-table [table]="dataTable"></app-data-table>`,
+    standalone: false
 })
 class TestFixtureComponent {
   dataTable: DataTable;

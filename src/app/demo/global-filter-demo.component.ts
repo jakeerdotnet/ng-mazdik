@@ -4,13 +4,14 @@ import { DemoService } from './demo.service';
 import { getColumnsPlayers } from './columns';
 
 @Component({
-  selector: 'app-global-filter-demo',
-  template: `<p>Client-side global filter</p>
+    selector: 'app-global-filter-demo',
+    template: `<p>Client-side global filter</p>
   <dt-toolbar [table]="table"></dt-toolbar>
   <app-data-table [table]="table"></app-data-table>
   <p>Server-side global filter</p>
   <app-crud-table [dataManager]="dataManager"></app-crud-table>
-  `
+  `,
+    standalone: false
 })
 
 export class GlobalFilterDemoComponent implements OnInit {

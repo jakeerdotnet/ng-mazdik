@@ -6,9 +6,10 @@ import { Subscription } from 'rxjs';
 import { ColumnMenuEventArgs } from '../../base/types';
 
 @Component({
-  selector: 'dt-header-cell',
-  templateUrl: 'header-cell.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'dt-header-cell',
+    templateUrl: 'header-cell.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 
 export class HeaderCellComponent implements OnInit, OnDestroy {

@@ -2,12 +2,13 @@ import { Component, OnChanges, ChangeDetectionStrategy, Input, Output, EventEmit
 import { SelectItem } from '../common';
 
 @Component({
-  selector: 'app-tabs',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
+    selector: 'app-tabs',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    template: `
   <span *ngFor="let tab of tabs" (click)="onClickTab(tab)" [ngClass]="{'active': isActive(tab)}">
     {{tab.name}}
   </span>`,
+    standalone: false
 })
 export class TabsComponent implements OnChanges {
 

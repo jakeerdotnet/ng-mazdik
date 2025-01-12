@@ -1,8 +1,8 @@
 import { Component, HostBinding } from '@angular/core';
 
 @Component({
-  selector: 'app-dropdown-directive-demo',
-  template: `
+    selector: 'app-dropdown-directive-demo',
+    template: `
   <nav class="navbar">
     <a href="javascript:void(0);" class="logo">Home</a>
     <ul class="main-nav">
@@ -32,7 +32,8 @@ import { Component, HostBinding } from '@angular/core';
       </li>
     </ul>
   </nav>
-  `
+  `,
+    standalone: false
 })
 export class DropdownDirectiveDemoComponent {
   @HostBinding('class.dropdown-directive-demo') cssClass = true;

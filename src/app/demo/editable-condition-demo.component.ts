@@ -3,9 +3,10 @@ import { Settings, DataTable } from 'ng-mazdik-lib';
 import { getColumnsPlayers } from './columns';
 
 @Component({
-  selector: 'app-editable-condition-demo',
-  template: `<p>Editable condition per row. If row.exp > 1000000 and column editable</p>
-  <app-data-table [table]="table"></app-data-table>`
+    selector: 'app-editable-condition-demo',
+    template: `<p>Editable condition per row. If row.exp > 1000000 and column editable</p>
+  <app-data-table [table]="table"></app-data-table>`,
+    standalone: false
 })
 
 export class EditableConditionDemoComponent implements OnInit {

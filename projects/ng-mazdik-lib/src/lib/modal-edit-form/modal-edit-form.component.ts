@@ -8,9 +8,10 @@ import { GetOptionsFunc } from '../dynamic-form/types';
 import { KeyValuePair } from '../row-view/types';
 
 @Component({
-  selector: 'app-modal-edit-form',
-  templateUrl: './modal-edit-form.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-modal-edit-form',
+    templateUrl: './modal-edit-form.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class ModalEditFormComponent implements OnInit {
 

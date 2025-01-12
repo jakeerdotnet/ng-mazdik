@@ -3,8 +3,9 @@ import { Settings, DataTable } from 'ng-mazdik-lib';
 import { getColumnsPlayers } from './columns';
 
 @Component({
-  selector: 'app-data-table-demo',
-  template: `<app-data-table [table]="table"></app-data-table>`
+    selector: 'app-data-table-demo',
+    template: `<app-data-table [table]="table"></app-data-table>`,
+    standalone: false
 })
 
 export class DataTableDemoComponent implements OnInit {

@@ -7,8 +7,8 @@ class Item {
 }
 
 @Component({
-  selector: 'app-drag-drop-demo',
-  template: `
+    selector: 'app-drag-drop-demo',
+    template: `
   <div class="drag-drop-demo">
     <div class="dd-column"
       *ngFor="let item of items"
@@ -22,7 +22,8 @@ class Item {
       </div>
     </div>
   </div>
-  `
+  `,
+    standalone: false
 })
 
 export class DragDropDemoComponent {

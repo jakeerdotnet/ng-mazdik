@@ -6,12 +6,13 @@ import { Subscription } from 'rxjs';
 import { Message, PositionType } from './types';
 
 @Component({
-  selector: 'app-notify',
-  template: `
+    selector: 'app-notify',
+    template: `
     <app-notify-item *ngFor="let msg of messages; let i=index" [message]="msg" [index]="i"
     (closeNotify)="onCloseNotify($event)"></app-notify-item>
 `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class NotifyComponent implements OnDestroy {
 

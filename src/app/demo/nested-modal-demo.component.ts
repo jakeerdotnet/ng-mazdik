@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-nested-modal-demo',
-  template: `
+    selector: 'app-nested-modal-demo',
+    template: `
     <button class="dt-button" (click)="modalRoot.show()">Open modal</button>
     <app-modal #modalRoot class="nested-modal-demo1">
       <ng-container class="app-modal-header">Modal 1</ng-container>
@@ -51,6 +51,7 @@ import { Component } from '@angular/core';
       </ng-container>
     </app-modal>
   `,
+    standalone: false
 })
 export class NestedModalDemoComponent {
 

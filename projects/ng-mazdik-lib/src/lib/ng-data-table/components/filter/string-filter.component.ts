@@ -5,9 +5,10 @@ import { Column, DataTable, FilterOperator } from '../../base';
 import { Keys } from '../../../common';
 
 @Component({
-  selector: 'app-string-filter',
-  templateUrl: 'string-filter.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-string-filter',
+    templateUrl: 'string-filter.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class StringFilterComponent implements OnInit, AfterViewInit, OnChanges {
 

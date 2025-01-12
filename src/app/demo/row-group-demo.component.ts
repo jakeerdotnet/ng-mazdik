@@ -3,8 +3,8 @@ import { Settings, DataTable } from 'ng-mazdik-lib';
 import { getColumnsPlayers } from './columns';
 
 @Component({
-  selector: 'app-row-group-demo',
-  template: `
+    selector: 'app-row-group-demo',
+    template: `
     <app-data-table [table]="table">
       <ng-template dtRowGroupTemplate let-row="row">
         <div class="datatable-body-cell dt-sticky" style="left: 0;" (click)="onExpand(row)">
@@ -13,7 +13,8 @@ import { getColumnsPlayers } from './columns';
         </div>
       </ng-template>
     </app-data-table>
-  `
+  `,
+    standalone: false
 })
 
 export class RowGroupDemoComponent implements OnInit {

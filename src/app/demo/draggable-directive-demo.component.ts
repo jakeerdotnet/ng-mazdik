@@ -1,8 +1,8 @@
 import { Component, HostBinding } from '@angular/core';
 
 @Component({
-  selector: 'app-draggable-directive-demo',
-  template: `
+    selector: 'app-draggable-directive-demo',
+    template: `
   <div class="dd-box box1"
     appDraggable
     [dragEventTarget]="dragEventTarget1"
@@ -16,6 +16,7 @@ import { Component, HostBinding } from '@angular/core';
     (touchstart)="dragEventTarget2 = $event">
   </div>
   `,
+    standalone: false
 })
 export class DraggableDirectiveDemoComponent {
 

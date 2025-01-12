@@ -2,8 +2,8 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { InputComponent } from './input.component';
 
 @Component({
-  selector: 'app-form-textarea',
-  template: `
+    selector: 'app-form-textarea',
+    template: `
     <div class="dt-group" [ngClass]="{'dt-has-error':dynElement.hasError}">
       <label [attr.for]="dynElement.name">{{dynElement.title}}</label>
       <textarea class="dt-input"
@@ -17,7 +17,8 @@ import { InputComponent } from './input.component';
       </div>
     </div>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class TextareaComponent extends InputComponent {
 

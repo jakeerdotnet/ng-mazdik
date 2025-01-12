@@ -7,9 +7,10 @@ import { Subscription } from 'rxjs';
 import { TreeNode, TreeHelper } from '../tree-lib';
 
 @Component({
-  selector: 'app-tree-table',
-  templateUrl: './tree-table.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-tree-table',
+    templateUrl: './tree-table.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class TreeTableComponent implements OnInit, OnDestroy {
 

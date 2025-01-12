@@ -3,8 +3,8 @@ import { InputOptionComponent } from './input-option.component';
 import { SelectItem } from '../common';
 
 @Component({
-  selector: 'app-form-checkbox',
-  template: `
+    selector: 'app-form-checkbox',
+    template: `
     <div class="dt-group" [ngClass]="{'dt-has-error':dynElement.hasError}">
       <label [attr.for]="dynElement.name">{{dynElement.title}}</label>
       <i class="dt-loader" *ngIf="loading"></i>
@@ -25,7 +25,8 @@ import { SelectItem } from '../common';
       </div>
     </div>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class CheckboxComponent extends InputOptionComponent {
 

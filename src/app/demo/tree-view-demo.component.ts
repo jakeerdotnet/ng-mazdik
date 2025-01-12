@@ -3,8 +3,8 @@ import { TreeNode, MenuItem, MenuEventArgs, ContextMenuComponent } from 'ng-mazd
 import { TreeDemoService } from './tree-demo.service';
 
 @Component({
-  selector: 'app-tree-view-demo',
-  template: `
+    selector: 'app-tree-view-demo',
+    template: `
     <app-tree-view class="tree-view-demo"
       [service]="treeService"
       (selectedChanged)="onSelectNode($event)"
@@ -13,7 +13,8 @@ import { TreeDemoService } from './tree-demo.service';
       [getIconFunc]="getIconFunc">
     </app-tree-view>
     <app-context-menu #contextMenu [menu]="items"></app-context-menu>
-  `
+  `,
+    standalone: false
 })
 export class TreeViewDemoComponent implements OnInit {
 

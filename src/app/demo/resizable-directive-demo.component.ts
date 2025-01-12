@@ -1,8 +1,8 @@
 import { Component, HostBinding } from '@angular/core';
 
 @Component({
-  selector: 'app-resizable-directive-demo',
-  template: `
+    selector: 'app-resizable-directive-demo',
+    template: `
   <div class="dd-box box1"
     appResizable
     [south]="true"
@@ -11,6 +11,7 @@ import { Component, HostBinding } from '@angular/core';
     (resizing)="onResize($event)">
   </div>
   `,
+    standalone: false
 })
 export class ResizableDirectiveDemoComponent {
 

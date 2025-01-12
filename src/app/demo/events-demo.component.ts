@@ -4,8 +4,8 @@ import { getColumnsPlayers } from './columns';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-events-demo',
-  template: `
+    selector: 'app-events-demo',
+    template: `
   <div style="position: relative;">
     <div #tooltip class="tooltip">
       <b>{{this.eventName}}</b>: {{this.eventValue}}
@@ -16,6 +16,7 @@ import { Subscription } from 'rxjs';
     </div>
   </div>
   `,
+    standalone: false
 })
 
 export class EventsDemoComponent implements OnInit, OnDestroy {

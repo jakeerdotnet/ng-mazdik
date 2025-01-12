@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-nav-menu-demo',
-  template: `
+    selector: 'app-nav-menu-demo',
+    template: `
     <app-nav-menu class="nav-menu-demo1" [nodes]="navMenuNodes" [minimize]="false"></app-nav-menu>
     <p>Minimize: true</p>
     <app-nav-menu class="nav-menu-demo2" [nodes]="navMenuNodes" [minimize]="true"></app-nav-menu>
   `,
+    standalone: false
 })
 export class NavMenuDemoComponent implements OnInit {
 

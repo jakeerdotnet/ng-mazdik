@@ -4,9 +4,10 @@ import { Component } from '@angular/core';
 import { ResizableDirective } from '../resizable.directive';
 
 @Component({
-  template: `<div style="width: 100px; height: 100px;"
+    template: `<div style="width: 100px; height: 100px;"
   appResizable [south]="true" [east]="true" [southEast]="true">
-  </div>`
+  </div>`,
+    standalone: false
 })
 class TestFixtureComponent {
 }

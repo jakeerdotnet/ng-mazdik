@@ -2,14 +2,15 @@ import { Component, Input, HostBinding, HostListener, Output, EventEmitter } fro
 import { TreeNode, Tree } from '../tree-lib';
 
 @Component({
-  selector: 'app-nav-menu',
-  template: `
+    selector: 'app-nav-menu',
+    template: `
   <app-nav-item *ngFor="let node of nodes"
     [node]="node"
     [expandedNode]="expandedNode"
     (expand)="expandedNode=$event"
     (linkClicked)="onLinkClicked($event)">
   </app-nav-item>`,
+    standalone: false
 })
 export class NavMenuComponent {
 

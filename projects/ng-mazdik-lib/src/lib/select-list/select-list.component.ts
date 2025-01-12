@@ -4,9 +4,10 @@ import {
 import { SelectItem } from '../common';
 
 @Component({
-  selector: 'app-select-list',
-  templateUrl: 'select-list.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-select-list',
+    templateUrl: 'select-list.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class SelectListComponent implements AfterViewInit {
 

@@ -5,7 +5,8 @@ import { ColumnBase, Settings, DataTable, Cell } from '../../base';
 import { BodyCellComponent } from '../body/body-cell.component';
 
 @Component({
-  template: `<dt-body-cell [table]="dataTable" [cell]="cell"></dt-body-cell>`
+    template: `<dt-body-cell [table]="dataTable" [cell]="cell"></dt-body-cell>`,
+    standalone: false
 })
 class TestFixtureComponent {
   dataTable: DataTable;

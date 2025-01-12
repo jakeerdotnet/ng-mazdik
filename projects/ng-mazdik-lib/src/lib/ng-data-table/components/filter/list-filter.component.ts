@@ -4,9 +4,10 @@ import {
 import { Column, DataTable, FilterOperator } from '../../base';
 
 @Component({
-  selector: 'app-list-filter',
-  templateUrl: 'list-filter.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-list-filter',
+    templateUrl: 'list-filter.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class ListFilterComponent implements OnChanges {
 

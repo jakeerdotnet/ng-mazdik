@@ -3,7 +3,8 @@ import { DropdownService } from './dropdown.service';
 import { Subscription } from 'rxjs';
 
 @Directive({
-  selector: '[appDropdown]'
+    selector: '[appDropdown]',
+    standalone: false
 })
 export class DropdownDirective implements OnDestroy {
 

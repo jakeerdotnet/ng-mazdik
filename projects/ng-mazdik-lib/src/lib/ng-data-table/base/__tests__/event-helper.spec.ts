@@ -5,20 +5,21 @@ import { By } from '@angular/platform-browser';
 import {EventHelper} from '../event-helper';
 
 @Component({
-  template: `
+    template: `
   <div class="datatable-body-row">
     <div class="datatable-body-cell" data-column-index="1" data-row-index="4">
       <div class="dt-inline-data" (click)="evt=$event"></div>
     </div>
   </div>
-  `
+  `,
+    standalone: false
 })
 class TestFixtureComponent {
   evt: any;
 }
 
 @Component({
-  template: `
+    template: `
   <div class="datatable">
     <div class="datatable-header" style="height: 40px;">
       <div class="datatable-header-row">
@@ -44,9 +45,10 @@ class TestFixtureComponent {
     </div>
   </div>
   `,
-  styleUrls: [
-    '../../components/data-table/data-table.component.css',
-  ],
+    styleUrls: [
+        '../../components/data-table/data-table.component.css',
+    ],
+    standalone: false
 })
 class TestDtFixtureComponent {
   evt: any;

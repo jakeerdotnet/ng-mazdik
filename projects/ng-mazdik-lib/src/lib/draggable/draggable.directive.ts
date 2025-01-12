@@ -4,7 +4,8 @@ import {
 import { isLeftButton, getEvent } from '../common/utils';
 
 @Directive({
-  selector: '[appDraggable]'
+    selector: '[appDraggable]',
+    standalone: false
 })
 export class DraggableDirective implements OnChanges, OnDestroy {
 

@@ -3,8 +3,8 @@ import { InputComponent } from './input.component';
 import { inputFormattedDate } from '../common/utils';
 
 @Component({
-  selector: 'app-form-calendar',
-  template: `
+    selector: 'app-form-calendar',
+    template: `
     <div class="dt-group" [ngClass]="{'dt-has-error':dynElement.hasError}">
       <label [attr.for]="dynElement.name">{{dynElement.title}}</label>
       <input class="dt-input"
@@ -17,7 +17,8 @@ import { inputFormattedDate } from '../common/utils';
       </div>
     </div>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class CalendarComponent extends InputComponent {
 

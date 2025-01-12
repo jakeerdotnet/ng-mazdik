@@ -3,8 +3,9 @@ import { TreeNode } from '../tree-lib';
 import { isBlank } from '../common';
 
 @Component({
-  selector: 'app-nav-item',
-  templateUrl: 'nav-item.component.html',
+    selector: 'app-nav-item',
+    templateUrl: 'nav-item.component.html',
+    standalone: false
 })
 export class NavItemComponent {
 

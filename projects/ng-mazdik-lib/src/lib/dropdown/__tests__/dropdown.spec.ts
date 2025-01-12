@@ -4,7 +4,8 @@ import { Component, ElementRef } from '@angular/core';
 import { DropDown } from '../drop-down';
 
 @Component({
-  template: `<div style="width: 100px; height: 100px;"></div>`
+    template: `<div style="width: 100px; height: 100px;"></div>`,
+    standalone: false
 })
 class TestFixtureComponent {
   dropdown: DropDown;

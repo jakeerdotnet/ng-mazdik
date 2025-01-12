@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { SelectItem } from 'ng-mazdik-lib';
 
 @Component({
-  selector: 'app-tabs-demo',
-  template: `<app-tabs [tabs]="tabs" (selectTab)="onSelectTab($event)"></app-tabs>`
+    selector: 'app-tabs-demo',
+    template: `<app-tabs [tabs]="tabs" (selectTab)="onSelectTab($event)"></app-tabs>`,
+    standalone: false
 })
 
 export class TabsDemoComponent {

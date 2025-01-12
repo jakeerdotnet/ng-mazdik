@@ -3,8 +3,9 @@ import { Settings, DataTable } from 'ng-mazdik-lib';
 import { getColumnsPlayers } from './columns';
 
 @Component({
-  selector: 'app-multiple-sort-demo',
-  template: `<app-data-table [table]="table"></app-data-table>`
+    selector: 'app-multiple-sort-demo',
+    template: `<app-data-table [table]="table"></app-data-table>`,
+    standalone: false
 })
 
 export class MultipleSortDemoComponent implements OnInit {

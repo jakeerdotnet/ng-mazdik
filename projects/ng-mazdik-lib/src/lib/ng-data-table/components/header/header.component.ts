@@ -7,9 +7,10 @@ import { Subscription } from 'rxjs';
 import { HeaderTemplateDirective } from '../../directives/header-template.directive';
 
 @Component({
-  selector: 'dt-header',
-  templateUrl: 'header.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'dt-header',
+    templateUrl: 'header.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 
 export class HeaderComponent implements OnInit, OnDestroy {

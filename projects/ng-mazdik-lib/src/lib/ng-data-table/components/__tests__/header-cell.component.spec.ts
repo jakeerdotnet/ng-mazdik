@@ -5,7 +5,8 @@ import { ColumnBase, Column, Settings, DataTable } from '../../base';
 import { HeaderCellComponent } from '../header/header-cell.component';
 
 @Component({
-  template: `<dt-header-cell [table]="dataTable" [column]="column"></dt-header-cell>`
+    template: `<dt-header-cell [table]="dataTable" [column]="column"></dt-header-cell>`,
+    standalone: false
 })
 class TestFixtureComponent {
   dataTable: DataTable;

@@ -8,9 +8,10 @@ import { ColumnMenuEventArgs } from '../../base/types';
 import { DropDown } from '../../../dropdown/drop-down';
 
 @Component({
-  selector: 'app-filter',
-  templateUrl: './filter.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-filter',
+    templateUrl: './filter.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class FilterComponent implements OnInit, OnDestroy {
 

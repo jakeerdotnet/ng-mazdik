@@ -6,9 +6,10 @@ import { Subscription } from 'rxjs';
 import { downloadCSV, Keys } from '../common';
 
 @Component({
-  selector: 'dt-toolbar',
-  templateUrl: './dt-toolbar.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'dt-toolbar',
+    templateUrl: './dt-toolbar.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class DtToolbarComponent implements OnInit, OnDestroy {
 

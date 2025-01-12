@@ -6,9 +6,10 @@ import { SelectItem } from '../common';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-dropdown-select',
-  templateUrl: 'dropdown-select.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-dropdown-select',
+    templateUrl: 'dropdown-select.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 
 export class DropdownSelectComponent implements OnInit, OnDestroy {

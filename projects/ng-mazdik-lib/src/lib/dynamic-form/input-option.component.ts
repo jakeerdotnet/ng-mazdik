@@ -4,9 +4,10 @@ import { InputComponent } from './input.component';
 import { SelectItem } from '../common';
 
 @Component({
-  selector: 'app-form-input-option',
-  template: ``,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-form-input-option',
+    template: ``,
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class InputOptionComponent extends InputComponent implements OnInit {
 

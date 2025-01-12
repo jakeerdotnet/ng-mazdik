@@ -7,9 +7,10 @@ import { ScrollerComponent } from '../../../scroller/scroller.component';
 import { RowGroupTemplateDirective } from '../../directives/row-group-template.directive';
 
 @Component({
-  selector: 'dt-body',
-  templateUrl: './body.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'dt-body',
+    templateUrl: './body.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class BodyComponent implements OnInit, OnDestroy {
 

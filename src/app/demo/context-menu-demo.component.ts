@@ -2,11 +2,12 @@ import { Component, ViewChild } from '@angular/core';
 import { MenuItem, ContextMenuComponent, MenuEventArgs } from 'ng-mazdik-lib';
 
 @Component({
-  selector: 'app-context-menu-demo',
-  template: `
+    selector: 'app-context-menu-demo',
+    template: `
     <button class="dt-button" (click)="show($event)">context menu</button>&nbsp;
     <app-context-menu #contextMenu [menu]="items"></app-context-menu>
   `,
+    standalone: false
 })
 export class ContextMenuDemoComponent {
 

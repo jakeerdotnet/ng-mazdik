@@ -6,9 +6,10 @@ import { isBlank, arrayMove, arrayTransfer } from '../common/utils';
 import { DragElementEvent, DropElementEvent } from '../drag-drop/types';
 
 @Component({
-  selector: 'app-dual-list-box',
-  templateUrl: 'dual-list-box.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-dual-list-box',
+    templateUrl: 'dual-list-box.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class DualListBoxComponent {
 

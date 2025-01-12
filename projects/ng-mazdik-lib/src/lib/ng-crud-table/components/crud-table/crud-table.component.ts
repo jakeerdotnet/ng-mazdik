@@ -13,9 +13,10 @@ import { EventHelper, ColumnModelGenerator } from '../../../ng-data-table/base';
 import { MenuItem } from '../../../common';
 
 @Component({
-  selector: 'app-crud-table',
-  templateUrl: './crud-table.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-crud-table',
+    templateUrl: './crud-table.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 
 export class CrudTableComponent implements OnInit, OnDestroy {

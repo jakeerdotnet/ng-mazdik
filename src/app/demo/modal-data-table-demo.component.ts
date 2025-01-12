@@ -3,8 +3,8 @@ import { Settings, DataTable } from 'ng-mazdik-lib';
 import { getColumnsPlayers, getColumnsRank, getColumnsInventory } from './columns';
 
 @Component({
-  selector: 'app-modal-data-table-demo',
-  template: `
+    selector: 'app-modal-data-table-demo',
+    template: `
     <app-data-table [table]="dtPlayers" style="width: 1100px;"></app-data-table>
     <ng-template #template1 let-row="row" let-value="value">
       <a (click)="onClickCell1($event, value, row)" href="#">
@@ -34,7 +34,8 @@ import { getColumnsPlayers, getColumnsRank, getColumnsInventory } from './column
         </app-data-table>
       </ng-container>
     </app-modal>
-  `
+  `,
+    standalone: false
 })
 
 export class ModalDataTableDemoComponent implements OnInit {

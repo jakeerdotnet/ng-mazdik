@@ -2,8 +2,9 @@ import { Component, Input, Output, EventEmitter, OnInit, ViewChild } from '@angu
 import { TreeDataSource, Tree, TreeNode } from '../tree-lib';
 
 @Component({
-  selector: 'app-tree-view',
-  templateUrl: 'tree-view.component.html',
+    selector: 'app-tree-view',
+    templateUrl: 'tree-view.component.html',
+    standalone: false
 })
 export class TreeViewComponent implements OnInit {
 

@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { SelectItem } from 'ng-mazdik-lib';
 
 @Component({
-  selector: 'app-inline-edit-demo',
-  template: `
+    selector: 'app-inline-edit-demo',
+    template: `
   <p>Input. Type: text</p>
   <div class="inline-edit-demo">
     <app-inline-edit class="inline-edit-demo-cell"
@@ -45,7 +45,8 @@ import { SelectItem } from 'ng-mazdik-lib';
     &nbsp;
     <button class="dt-button" (click)="editing3=!editing3">{{editing3 ? 'View' : 'Edit'}}</button>&nbsp;
   </div>
-  `
+  `,
+    standalone: false
 })
 export class InlineEditDemoComponent {
 
