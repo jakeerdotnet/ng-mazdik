@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ng-mazdik:build:production"
+              "buildTarget": "ng-mazdik:build:production"
             },
             "development": {
-              "browserTarget": "ng-mazdik:build:development"
+              "buildTarget": "ng-mazdik:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-mazdik:build"
+            "buildTarget": "ng-mazdik:build"
           }
         },
         "test": {

@@ -16,7 +16,7 @@
       <app-form-select
         *ngSwitchCase="'select'"
         [dynElement]="dynElement"
-        [(value)]="(dynElement.keyElement) ? item[dynElement.keyElement] : item[dynElement.name]"
+        [value]="(dynElement.keyElement) ? item[dynElement.keyElement] : item[dynElement.name]" (valueChange)="(dynElement.keyElement) ? item[dynElement.keyElement] : item[dynElement.name] = $event"
         [dependsValue]="item[dynElement.dependsElement]"
         (valid)="onValid($event, dynElement)"
         [getOptionsFunc]="getOptionsFunc"
@@ -30,7 +30,7 @@
       <app-form-select-popup
         *ngSwitchCase="'select-popup'"
         [dynElement]="dynElement"
-        [(value)]="(dynElement.keyElement) ? item[dynElement.keyElement] : item[dynElement.name]"
+        [value]="(dynElement.keyElement) ? item[dynElement.keyElement] : item[dynElement.name]" (valueChange)="(dynElement.keyElement) ? item[dynElement.keyElement] : item[dynElement.name] = $event"
         [dependsValue]="item[dynElement.dependsElement]"
         (valid)="onValid($event, dynElement)"
         [getOptionsFunc]="getOptionsFunc"
@@ -45,7 +45,7 @@
       <app-form-select-dropdown
         *ngSwitchCase="'select-dropdown'"
         [dynElement]="dynElement"
-        [(value)]="(dynElement.keyElement) ? item[dynElement.keyElement] : item[dynElement.name]"
+        [value]="(dynElement.keyElement) ? item[dynElement.keyElement] : item[dynElement.name]" (valueChange)="(dynElement.keyElement) ? item[dynElement.keyElement] : item[dynElement.name] = $event"
         [dependsValue]="item[dynElement.dependsElement]"
         (valid)="onValid($event, dynElement)"
         [getOptionsFunc]="getOptionsFunc"
