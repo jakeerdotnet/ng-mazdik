@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CdtSettings, DataTable, DataManager } from 'ng-mazdik-lib';
+import { CdtSettings, DataTable, DataManager } from 'src/app/public-api';
 import { DemoService } from './demo.service';
 import { getColumnsPlayers } from './columns';
 

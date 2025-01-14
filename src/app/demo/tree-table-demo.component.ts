@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { TreeTable, Settings, TreeBuilder } from 'ng-mazdik-lib';
+import { TreeTable, Settings, TreeBuilder } from 'src/app/public-api';
 import { TreeDemoService } from './tree-demo.service';
 import { getTreeColumns } from './columns';
 import { Subscription } from 'rxjs';

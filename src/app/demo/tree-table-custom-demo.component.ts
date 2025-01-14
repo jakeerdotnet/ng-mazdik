@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy, ViewChild, TemplateRef } from '@angular/core';
-import { ColumnBase, Settings, DataTable, Row, Tree, TreeNode, TreeFlattener } from 'ng-mazdik-lib';
+import { ColumnBase, Settings, DataTable, Row, Tree, TreeNode, TreeFlattener } from 'src/app/public-api';
 import { getTreeColumns } from './columns';
 import { Subscription } from 'rxjs';
 

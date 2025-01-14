@@ -1,6 +1,6 @@
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
-import { NavMenuComponent } from 'ng-mazdik-lib';
+import { NavMenuComponent } from 'src/app/public-api';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +15,7 @@ export class AppComponent implements AfterViewInit {
 
   @ViewChild(NavMenuComponent, { static: false }) navMenu: NavMenuComponent;
 
-  constructor(private router: Router) {
+  constructor(private readonly router: Router) {
     router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         this.state = event.url.substr(1);

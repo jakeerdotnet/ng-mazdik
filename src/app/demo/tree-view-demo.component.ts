@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { TreeNode, MenuItem, MenuEventArgs, ContextMenuComponent } from 'ng-mazdik-lib';
+import { TreeNode, MenuItem, MenuEventArgs, ContextMenuComponent } from 'src/app/public-api';
 import { TreeDemoService } from './tree-demo.service';
 
 @Component({

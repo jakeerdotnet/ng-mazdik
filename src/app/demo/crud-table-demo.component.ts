@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CdtSettings, DataManager, SelectItem, DtMessages, DtMessagesEn } from 'ng-mazdik-lib';
+import { CdtSettings, DataManager, SelectItem, DtMessages, DtMessagesEn } from 'src/app/public-api';
 import { DemoService } from './demo.service';
 import { getColumnsPlayers } from './columns';
 

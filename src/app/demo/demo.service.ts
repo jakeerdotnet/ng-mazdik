@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { DataSource, RequestMetadata, PagedResult, DataSort, DataFilter, NotifyService, arrayPaginate } from 'ng-mazdik-lib';
+import { DataSource, RequestMetadata, PagedResult, DataSort, DataFilter, NotifyService, arrayPaginate } from 'src/app/public-api';
 
 @Injectable({
   providedIn: 'root'

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SelectItem } from 'ng-mazdik-lib';
+import { SelectItem } from 'src/app/public-api';
 
 @Component({
   selector: 'app-modal-select-demo',

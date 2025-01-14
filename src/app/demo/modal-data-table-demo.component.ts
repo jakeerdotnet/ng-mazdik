@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
-import { Settings, DataTable } from 'ng-mazdik-lib';
+import { Settings, DataTable } from 'src/app/public-api';
 import { getColumnsPlayers, getColumnsRank, getColumnsInventory } from './columns';
 
 @Component({

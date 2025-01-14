@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy, ChangeDetectorRef, ViewChild, ElementRef } from '@angular/core';
-import { Settings, DataTable, CellEventType, EventHelper } from 'ng-mazdik-lib';
+import { Settings, DataTable, CellEventType, EventHelper } from 'src/app/public-api';
 import { getColumnsPlayers } from './columns';
 import { Subscription } from 'rxjs';
 

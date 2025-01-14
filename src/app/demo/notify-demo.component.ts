@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NotifyService } from 'ng-mazdik-lib';
+import { NotifyService } from '../public-api';
 
 @Component({
   selector: 'app-notify-demo',
@@ -13,7 +13,7 @@ import { NotifyService } from 'ng-mazdik-lib';
 })
 export class NotifyDemoComponent {
 
-  constructor(private notifyService: NotifyService) { }
+  constructor(private readonly notifyService: NotifyService) { }
 
   error(): void {
     this.notifyService.sendMessage({title: 'HttpErrorResponse', text: 'test1', severity: 'error'});

@@ -31,7 +31,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "dist/ng-mazdik-lib/styles/bundled.css"
+              "src/app/lib/styles/all.css"
             ],
             "scripts": [],
             "browser": "src/main.ts"

@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { CdtSettings, DataManager, ModalEditFormComponent } from 'ng-mazdik-lib';
+import { CdtSettings, DataManager, ModalEditFormComponent } from 'src/app/public-api';
 import { DemoService } from './demo.service';
 import { getColumnsPlayers } from './columns';
 

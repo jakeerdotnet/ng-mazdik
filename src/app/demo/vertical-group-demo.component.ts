@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy, ViewChild, ElementRef } from '@angular/core';
-import { Settings, DataTable, GroupMetadata, DataAggregation } from 'ng-mazdik-lib';
+import { Settings, DataTable, GroupMetadata, DataAggregation } from 'src/app/public-api';
 import { getColumnsPlayers } from './columns';
 import { Subscription } from 'rxjs';
 

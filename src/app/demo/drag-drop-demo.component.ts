@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { arrayMove, arrayTransfer, DragElementEvent, DropElementEvent } from 'ng-mazdik-lib';
+import { arrayMove, arrayTransfer, DragElementEvent, DropElementEvent } from 'src/app/public-api';
 
 class Item {
   name: string;

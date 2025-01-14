@@ -19,7 +19,7 @@ Add global styles in angular.json
 Feature-rich data table component for Angular with CRUD operations.
 ```typescript
 import {Component}  from '@angular/core';
-import {ColumnBase, CdtSettings, DataSource, DataManager, Validators} from 'ng-mazdik-lib';
+import {ColumnBase, CdtSettings, DataSource, DataManager, Validators} from 'src/app/public-api';
 import {DemoService} from './samples/services';
 
 @Component({
@@ -127,7 +127,7 @@ export class PlayersComponent {
 ```
 ### Sample data-table
 ```typescript
-import {ColumnBase, Settings, DataTable} from 'ng-mazdik-lib';
+import {ColumnBase, Settings, DataTable} from 'src/app/public-api';
 
 @Component({
   selector: 'app-data-table-demo',
@@ -148,7 +148,7 @@ export class DataTableDemoComponent {
 ```
 ### Sample tree-table
 ```typescript
-import {ColumnBase, Settings, TreeTable} from 'ng-mazdik-lib';
+import {ColumnBase, Settings, TreeTable} from 'src/app/public-api';
 import {TreeDemoService} from './tree-demo.service';
 
 @Component({
@@ -326,7 +326,7 @@ private subscriptions: Subscription[] = [];
 
 ### Sample translate
 ```typescript
-import {DtMessages, DtMessagesEn} from 'ng-mazdik-lib';
+import {DtMessages, DtMessagesEn} from 'src/app/public-api';
 
 messages: DtMessages = new DtMessagesEn({
   empty: 'No data to display',

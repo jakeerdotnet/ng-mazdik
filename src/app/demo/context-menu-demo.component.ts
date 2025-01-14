@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { MenuItem, ContextMenuComponent, MenuEventArgs } from 'ng-mazdik-lib';
+import { MenuItem, ContextMenuComponent, MenuEventArgs } from 'src/app/public-api';
 
 @Component({
   selector: 'app-context-menu-demo',
