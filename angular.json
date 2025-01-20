@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-mazdik": {
+    "ng-jakeer": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": {
-              "base": "dist/ng-mazdik"
+              "base": "dist"
             },
             "index": "src/index.html",
             "polyfills": [
@@ -41,7 +41,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
+                  "maximumWarning": "1000kb",
                   "maximumError": "1mb"
                 },
                 {
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ng-mazdik:build:production"
+              "buildTarget": "ng-jakeer:build:production"
             },
             "development": {
-              "buildTarget": "ng-mazdik:build:development"
+              "buildTarget": "ng-jakeer:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "ng-mazdik:build"
+            "buildTarget": "ng-jakeer:build"
           }
         },
         "test": {
@@ -100,37 +100,6 @@
               "src/styles.css"
             ],
             "scripts": []
-          }
-        }
-      }
-    },
-    "ng-mazdik-lib": {
-      "projectType": "library",
-      "root": "projects/ng-mazdik-lib",
-      "sourceRoot": "projects/ng-mazdik-lib/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "project": "projects/ng-mazdik-lib/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/ng-mazdik-lib/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "projects/ng-mazdik-lib/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/ng-mazdik-lib/src/test.ts",
-            "tsConfig": "projects/ng-mazdik-lib/tsconfig.spec.json",
-            "karmaConfig": "projects/ng-mazdik-lib/karma.conf.js"
           }
         }
       }

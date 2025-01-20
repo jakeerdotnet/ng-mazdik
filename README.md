@@ -1,19 +1,15 @@
 # Angular UI component library
 
-```
-npm i ng-mazdik-lib --save
-```
-
 ### Styles
 Add global styles in angular.json
 ```json
 "styles": [
   "src/styles.css",
-  "node_modules/ng-mazdik-lib/styles/bundled.css"
+  "src/app/lib/styles/all.css"
 ],
 ```
 
-<a target="_blank" href="https://mazdik.github.io/ng-mazdik/">Demos</a>  
+<a target="_blank" href="https://netlify.github.io/ng-jakeer/">Demos</a>  
 
 ### Sample crud-table
 Feature-rich data table component for Angular with CRUD operations.

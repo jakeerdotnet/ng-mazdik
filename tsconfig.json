@@ -11,12 +11,7 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
-    "paths": {
-      "ng-mazdik-lib": [
-        "dist/ng-mazdik-lib/ng-mazdik-lib",
-        "dist/ng-mazdik-lib"
-      ]
-    },
+    "paths": {     },
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
